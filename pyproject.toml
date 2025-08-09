@@ -1,24 +1,8 @@
 [project]
 name = "pymyair"
 version = "0.2.1"
-description = "A simple Python API that wraps the HTTP-based API exposed by the MyPlace service."
-readme = { file = "README.rst", content-type = "text/x-rst" }
-license = { text = "MIT" }
-authors = [{ name = "Sam Richards" }]
 requires-python = ">=3.8"
-keywords = ["pymyair"]
-classifiers = [
-  "Development Status :: 4 - Beta",
-  "Intended Audience :: Developers",
-  "License :: OSI Approved :: MIT License",
-  "Natural Language :: English",
-  "Programming Language :: Python :: 3",
-]
-
-dependencies = ["Click>=6.0", "requests>=2"]
-
-[project.scripts]
-myair = "pymyair.cli:cli"
+dynamic = ["description", "readme", "license", "authors", "keywords", "classifiers", "dependencies", "scripts"]
 
 [build-system]
 requires = ["setuptools>=70", "wheel"]
